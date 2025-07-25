@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bundle.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+    <title> {{ title }} </title>
+</head>
+<body>
+    <div id="site-header"> 
+    <a href="/">
+        <svg width="30" height="30" style="margin-top: 5px;">
+        <rect width="30" height="30" stroke="#222020" stroke-width="10" fill="#6c436b" />
+        icon_home
+        </svg>
+    </a>
+    <h1 style="margin: 0;"> Aohk22 Site </h1>
+    </div>
+
+    {{ content | safe }}
+</body>
+<footer>
+    </br>
+    <p onclick="topFunction()" style="cursor: pointer;">Back to top</p>
+    <p>Author: LTK</p>
+</footer>
+
+<script>
+// thanks www.w3schools.com :)
+function topFunction() {
+    document.body.scrollTop = 0; // for Safari
+    document.documentElement.scrollTop = 0; // for Chrome, Firefox, IE and Opera
+}
+hljs.highlightAll();
+</script>
+</html>
